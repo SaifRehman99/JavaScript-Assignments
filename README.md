@@ -1,2 +1,2 @@
 # JavaScript-Assignments
-Assignments
+# SOLVED ASSIGNMENTS
