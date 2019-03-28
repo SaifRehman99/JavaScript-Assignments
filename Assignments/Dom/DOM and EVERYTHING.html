@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+ <h1>
+
+    </h1>
+    <p>
+
+    </p>
+
+    </div>
+    <div id="1" >
+
+    </div>
+    <div class="div1">
+
+    </div>
+    <div class="div1">
+        
+        </div>
+<div id="container">
+
+    <button onclick="change();">Click Me!</button>
+</div> 
+
+    
+    
+</body>
+<script>
+            // 1 )DOM
+
+
+        //all tags are objects
+
+
+        //to access complete html document
+        // console.log(document);
+    
+        //to access head objects inside html document
+        // console.log(document.head);
+    
+        //to access body objects
+        // console.log(document.body); 
+        
+        
+         //2) Access and manipulate DOM
+
+        // var ref = document.getElementById("1");
+        // console.log(ref);
+
+        // ref.innerText= "hello World";
+
+        // var ref = document.getElementsByClassName("div1 ");
+        // console.log(ref);
+
+        // ref[0].innerText= "hello World";
+        // ref[1].innerText= "hello World 22";
+
+
+        // var ref=document.getElementsByTagName("div");
+        // console.log(ref);
+
+        // ref[0].innerText="hello world";
+        // ref[1].innerText="hello world 12";
+        // ref[2].innerText="hello world 23";
+        // ref[3].innerText="hello world 24";
+        // ref[4].innerText="hello world 25";
+        
+
+
+                                            //3) Access and manipulate DOM via NODES  
+
+//         function change(){
+
+                                            
+
+//         var div= document.getElementById("container");
+//         console.log(div);
+
+//         var heading = document.createElement("h1");
+
+//         var txt = document.createTextNode("HEADING");
+        
+//         console.log(heading);
+//         console.log(txt);
+        
+//         heading.appendChild(txt);
+//         console.log(heading);
+
+//         div.appendChild(heading);
+        
+// }
+        
+                                            //4) Junk Artifacts in JS ( NODES )
+
+
+//  var a = document.childNodes[0].childNodes[1];
+//  console.log(a);
+
+                                            
+        </script>
+</html>

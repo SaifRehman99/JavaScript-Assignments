@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table and Counter</title>
+</head>
+<body>
+
+    <table id="tab">
+
+    </table>
+    <p id="para">
+
+    </p>
+    <button onclick="Inc()">+</button>
+    <button onclick="Dec()">-</button>
+    <script>
+            var counter = 0;
+            var paraa = document.getElementById('para');
+            paraa.innerHTML = counter;
+
+            function Inc(){
+                counter+=1;
+                para.innerHTML= counter;
+            }
+            function Dec(){
+                counter-=1;
+                para.innerHTML=counter;
+
+            }
+            var names = ["Ali" , "Ahmed" , "Umar"];
+            var classes = ['10 ', '6' , '5'];
+            var table = document.getElementById('tab');
+            showTable();
+            function del(i) {
+            names.splice(i, 1);
+            showTable();
+        }
+        function showTable() {
+            table.innerHTML = '';    
+            for (var i = 0; i < names.length; i++) {
+                row = '<tr><td>' + i +  ' </td><td>' + names[i] + '</td><td>' + classes[i] + '</td><td><button onclick=del(' + i + ')>Delete</button></td></tr>';
+                table.innerHTML += row; 
+            }
+        }
+    
+    </script>
+    
+</body>
+</html>

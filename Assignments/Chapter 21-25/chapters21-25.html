@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    //Q1
+
+    var fName = prompt("Enter Your First Name =");
+    var lName = prompt("Enter Your Last Name =");
+    var fullName = fName + " " + lName;
+    alert(" Hello " + fullName);
+
+
+    // //Q2
+
+    var Phone = prompt("Enter Your Favourite Mobile =");
+    alert("My favourite Phone is :" + Phone);
+    alert("Legnth of String is =" + Phone.length);
+
+
+    // //Q3
+    // <!-- 
+    var string = "Pakistani";
+    alert(string.indexOf("n"));
+    //  -->
+
+    // //Q4
+    // <!--  -->
+    var stringg = "Hello World";
+    alert("Last Index of l :" + stringg.lastIndexOf("l"));
+
+    // ///Q5
+
+    alert("Character at Index :" + string.indexOf("i") + " " + string.charAt(3));
+
+
+    // //Q6
+
+    alert(fName.concat(lName));
+
+    // //Q7
+
+    var city = "Hyderabad";
+    alert("After Replacement: " + city.replace("Hyder", "Islam"));
+
+    // //Q8
+
+
+    var message = "Ali and Sami are Best friend, They play cricket and football together";
+    alert(message);
+    alert(message.replace(/and/g, "&"));
+
+
+    // //Q9
+    // <!-- 
+    var value = "472";
+    alert(value);
+    alert(typeof(value));
+    var a = Number(value);
+    alert(a);
+    alert(typeof(a));
+
+
+    // //Q10
+
+    var user = prompt("User Input =");
+    alert("User Input =" + user);
+    alert("Upper Case = " + user.toUpperCase());
+    alert("Lower Case =" + user.toLowerCase());
+
+    // //Q11.
+    var ab = 35.45;
+    var cd = ab.toString();
+    var r = cd.split(".").join("");
+    alert("Number =" + ab);
+    alert("Result = " + r);
+
+    // //Q12
+
+    var userI = prompt("Enter User Input =");
+
+    var f = false;
+
+    for (var i = 0; i < userI.length; i++) {
+        if (userI.charCodeAt(i) === 33 || userI.charCodeAt(i) === 44 || userI.charCodeAt(i) === 46 || userI.charCodeAt(i) == 64) {
+            f = true;
+            alert("Enter Valid User Name");
+            break;
+        }
+
+    }
+    if (f == false) {
+        alert("Hello " + userI);
+    }
+
+    //Q13
+
+    var arr = ["cake", "Applepie", "cookie", "chips", "patties"];
+    var enter = prompt("Enter Your Food = ");
+    enter = enter.toLowerCase();
+    var check = false;
+    alert(enter);
+
+    for (i = 0; i < arr.length; i++) {
+
+        if (arr[i] === enter) {
+
+            alert("We have " + enter + "at Index " + i);
+            check = true;
+            break;
+
+        }
+    }
+    if (check === false) {
+        alert("We dont have " + enter + "!");
+    }
+
+    //Q14
+
+    var pass = prompt("Enter Your Password =");
+    var Find = false;
+
+    for (i = 31; i < 65; i++) {
+        if (pass.charCodeAt(0) === i) {
+
+
+            alert("Password cant be start with Number!");
+            alert("Enter a Valid Password!");
+            Find = true;
+            break;
+        }
+    }
+    if (pass.length < 6) {
+        alert("Password Cant be less than 6 Digits!");
+
+    } else if (Find === false) {
+        alert("Valid");
+
+    }
+
+
+    //Q15
+    // <!-- 
+    var uni = "University of Karachi";
+    var res = uni.split("}}}}}");
+    for (i = 0; i < res.length; i++) {
+        alert(res[i]);
+    }
+
+    //Q16
+
+    var userinput = "Pakistan";
+    alert(userinput);
+    alert("Last Char is " + userinput.charAt(userinput.length - 1));
+
+    //Q17 -->
+
+    var x = "The quick brown fox jumps over the and the lazy dog";
+    var count = (x.match(/the/g)).length;
+    alert("The Occurence of the is " + count);
+</script>
+
+<body>
+
+</body>
+
+</html>

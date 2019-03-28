@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello world</h1>
+    <p>This is the Paragraph1</p>
+    <p>This is an Paragraph1</p>
+    <p>This is theParagraph1</p>
+    <p>This is ok Paragraph1</p>
+    <p>This is  Paragraph1</p>
+    <p>This is  Paragraph1</p>
+
+    
+</body>
+<script>
+
+    //=======Select the only first instant===========
+
+
+    // var a = document.q   uerySelector('p');
+    // console.log(a);
+    // a.remove();
+
+
+
+//============Select the complete instant==============//
+
+    var b = document.querySelectorAll('p');
+    // console.log(b)
+    // b.forEach(para => {
+    //     para.remove();
+        
+    // });
+
+
+
+//============display the text content or edit ============//
+
+    // b.forEach(para => {
+    //     para.textContent;
+    //     para.textContent = "we can edit our para also"
+    // });
+
+
+//======Remove the text containing (ok) text==============//
+
+    b.forEach(element => {
+        if(element.textContent.includes('ok')){
+            element.remove();   
+        }
+        
+    });
+
+//==========adding thing in browser dynamically using DOM==========//
+
+
+    var list = [
+        {
+            text:'Saif'
+        },{
+            text:'Rehman'
+        }
+    ]
+list.forEach((a) => {
+    var ele = document.createElement('h2');
+    ele.textContent  = a.text;
+    document.querySelector('body').appendChild(ele);
+
+
+})
+  
+
+    
+    
+    </script>
+    
+</html>

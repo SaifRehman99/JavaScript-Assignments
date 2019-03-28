@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 43-48</title>
+</head>
+
+<body>
+    <h1>Question 1</h1>
+
+    <a href="#" onclick="alert('This is Link')"> Link</a>
+    <hr>
+    <h1>Question 2</h1>
+    <a href="#" onclick="alert('These are Phones!')">
+        <img src="E:\b.jpg" alt="" onMouseOver="src='E:\a.jpg'" onMouseOut="src='E:\c.jpg'">
+    </a>
+    <hr>
+    <h1>Question 3</h1>
+    <table id="tab">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Jhon</td>
+            <td>10</td>
+            <td><button onclick="delFunction()">Delete</button></td>
+
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Doe</td>
+            <td>9</td>
+            <td><button onclick="delFunction()">Delete</button></td>
+
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Mark</td>
+            <td>8</td>
+            <td><button onclick="delFunction()">Delete</button></td>
+
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>James</td>
+            <td>8</td>
+            <td><button onclick="delFunction()">Delete</button></td>
+
+        </tr>
+    </table>
+    <script>
+        function delFunction() {
+            document.getElementById("tab").deleteRow(1);
+        }
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var a = prompt("Enter Any Character or ASCII Code =");
+        if ((a >= 'A' && a <= 'Z') || (a >= '65' && a <= '90')) {
+            alert("You Entered Upper Case Letter!");
+        } else if ((a >= 'a' && a <= 'z') || (a >= '97' && a <= '122')) {
+            alert("You Entered Lower case letter");
+        } else
+            alert("NULL");
+
+        var number = prompt("Enter Integer 1 =");
+        var number2 = prompt("Enter Integer 2 =");
+        if (number == number2) {
+            alert("Both Integer are equal");
+        } else if (number > number2) {
+            alert("Number 1 is Greater");
+        } else
+            alert("Number2 is greater");
+        var Check = prompt("Enter Number to Check Whether it is negative positive or zero = ");
+        if (Check == 0) {
+            alert("Number is Zero");
+        } else if (Check > 0) {
+            alert("Number is positve");
+        } else
+            alert("Number is Negative");
+
+        var vC = prompt("Enter Any String =");
+        if (vC == "a" || vC == "e" || vC == "i" || vC == "o" || vC == "u" || vC == "A" || vC == "E" || vC == "I" || vC == "O" || vC == "U") {
+            alert(true);
+        } else
+            alert(false);
+
+        var password = "Hello";
+        var test = prompt("Enter Your Password =");
+        if (test == password) {
+            alert("Correct");
+        } else
+            alert("Incorrect");
+
+        var time = prompt("Enter Time =");
+        if (time >= 0000 && time < 1200) {
+            alert("Good Morning");
+        } else if (time >= 1200 && time < 1700) {
+            alert("Goof Afternoon");
+        } else if (time >= 1700 && time < 2100) {
+            alert("Good Evening");
+        } else if (time >= 2100 && time <= 2359) {
+            alert("Good Night");
+        } else
+            alert("Dfa hu xD");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

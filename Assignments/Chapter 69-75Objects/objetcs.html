@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+</head>
+<script>
+
+    let user = new Object(); //Creating Object
+
+     user = {
+        name : "Saif",
+        age: 19,
+        Job : "Developer"
+       
+    };
+    alert(user.name);
+    alert(user.Job);
+    
+                     
+    delete user.age; //deleting objects
+    alert(user.age);
+
+    //For multiwords square brackets are used instead of dot (.)
+                
+                
+                // WRONG WAY
+
+    // user.like birds = true ; 
+
+
+
+
+    user["Like birds"] = true; // RIGHT WAY 
+
+    alert(user["Like birds"]);
+
+    let user = {
+  name: "John",
+  age: 30
+};
+
+let key = prompt("What do you want to know about the user?", "name");
+
+// access by variable
+alert( user[key] ); // John (if enter "name")
+
+
+            // We can use square brackets in an object literal. That’s called computed properties.
+
+                            // For instance:
+
+ 
+
+
+
+let fruit = prompt("Which fruit to buy?", "apple");
+
+let bag = {
+  [fruit]: 5, // the name of the property is taken from the variable fruit
+};
+
+alert( bag.apple ); // 5 if fruit="apple"
+    
+
+
+// Reserved words are allowed as property names
+// A variable cannot have a name equal to one of language-reserved words like “for”, “let”, “return” etc.
+
+// But for an object property, there’s no such restriction. Any name is fine:
+
+let obj = new Object();
+
+ 
+  obj = {
+  for: 1,
+  let: 2,
+  return: 3
+}
+
+alert( obj.for + obj.let + obj.return );  // 6
+
+
+//For IN LOOP
+
+for(key in object) {
+  // executes the body for each key among object properties
+}
+
+let user = {
+  name: "John",
+  age: 30,
+  isAdmin: true
+};
+
+for(let key in user) {
+  // keys
+  alert( key );  // name, age, isAdmin
+  // values for the keys
+  alert( user[key] ); // John, 30, true
+}
+
+
+// Math.trunc is a built-in function that removes the decimal part
+
+
+// Cloning and merging, Object.assign
+let user = {
+  name: "John",
+  age: 30
+};
+
+let clone = {}; // the new empty object
+
+// let's copy all user properties into it
+for (let key in user) {
+  clone[key] = user[key];
+}
+
+// now clone is a fully independant clone
+clone.name = "Pete"; // changed the data in it
+
+alert( user.name ); // still John in the original object
+
+</script>
+<body>
+    
+</body>
+</html>

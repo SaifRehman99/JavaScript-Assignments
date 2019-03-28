@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 35-38</title>
+</head>
+<script>
+    //Question Number 1:
+
+    // function disp_date() {
+
+    //     var Hello = new Date();
+    //     alert(Hello);
+
+    // }
+    // disp_date();
+
+    // //Question Number 2:
+
+    // function getname() {
+    //     var fname = prompt(" Enter Your First Namme = ");
+    //     var lname = prompt(" Enter Your Last Name = ");
+    //     var full = "Hello " + fname + " " + lname;
+    //     alert(full);
+
+    // }
+
+    // getname();
+
+    // //Question Number 3
+
+    // function adnum() {
+    //     var a = prompt("Enter Number 1 =");
+    //     var b = prompt("Enter Number 2 =");
+    //     return (Number(a) + Number(b));
+    // }
+    // alert(adnum());
+
+    // //Question Number 4
+
+    // var num1 = Number(prompt("Enter Your Number = "));
+    // var op = prompt("Enter Your Operator = ");
+    // var num2 = Number(prompt("Enter Your Number Again = "));
+
+
+    // function Cal(a, b, c) {
+
+    //     switch (b) {
+    //         case "+":
+    //             return (a + c);
+    //             break;
+    //         case "-":
+    //             return (a - c);
+    //             break;
+    //         case "*":
+    //             return (a * c);
+    //             break;
+    //         case "/":
+    //             return (a / c);
+    //             break;
+    //         default:
+    //             alert("Invalid Input!");
+
+    //     }
+
+    // }
+    // alert(Cal(num1, op, num2));
+
+    // //Question 5
+
+    // var sq1 = prompt("Enter Number to Square =");
+    // Number(sq1);
+
+    // function sq(a) {
+    //     return (Math.pow(a, 2));
+    // }
+
+    // alert(sq(sq1));
+
+    // //Question 6
+
+    // var n1 = Number(prompt("Enter Number to  Calculate Factorial ="));
+
+    // function fact(n) {
+    //     var a = 1;
+    //     for (var i = 1; i <= n; i++) {
+    //         a = a * i;
+    //     }
+    //     return (a);
+    // }
+
+    // alert(fact(n1));
+
+
+    // //Question 7
+
+    // var counts = Number(prompt("Enter Start Number = "));
+    // var counte = Number(prompt("Enter End Number = "));
+
+    // function dispp(a, b) {
+    //     for (var k = a; k <= b; k++) {
+    //         alert(k);
+    //     }
+    // }
+    // dispp(counts, counte);
+
+    //Question 8
+
+    // var bse = Number(prompt("Enter Value of Base = "));
+    // var perp = Number(prompt("Enter Value of Perpendicular = "));
+    // var hyp;
+    // var f;
+
+
+    // function calhyp(a, b) {
+    //     if (a === 0 || b == 0) {
+    //         alert("Both Value should be greater then One!");
+    //     } else {
+
+    //         var bsqr = a * a;
+    //         var persqr = b * b;
+
+
+    //         return function() {
+    //             hyp = bsqr + persqr;
+    //             return (Math.sqrt(hyp));
+
+    //         }
+    //     }
+    // }
+
+    // var res = calhyp(bse, perp)();
+    // alert("Hyp of Right Angle Triangle is =" + res);
+
+    // //Question 9
+
+    // var width = Number(prompt("Enter Width ="));
+
+    // function areaTri(a, b) {
+
+    //     return a * b;
+    // }
+    // var calF = areaTri(width, 20);
+    // alert("Area of Triangle is = " + calF);
+
+    //Question 10
+
+    // function checkPalindrome(word) {
+    //     var array = [];
+    //     for (i = 0; i <= word.length; i++) {
+    //         array.push(word.slice(word.length - i, word.length - i + 1));
+    // }
+    // if (array.join("") === word) {
+    //     return ("yes its a Palindrome");
+    // } else {
+    //     return ("No");
+    //     }
+    // }
+    // var w = prompt("Enter a Word =");
+    // var ress = checkPalindrome(w);
+    // alert(ress); 
+
+    //Question 11
+
+
+    // function upperCase(a) {
+    //     a = a.split(" ");
+    //     for (i = 0; i < a.length; i++) {
+    //         a[i] = a[i].charAt(0).toUpperCase() + a[i].slice(1).toLowerCase();
+    //     }
+    //     alert(a.join(" "));
+    // }
+
+    // var str = prompt("Enter a String =");
+
+    // var end = upperCase(str);
+
+    //Question 12;
+
+    //     var strr = prompt("Enter a String =");
+
+    //     function longestChar(a) {
+    //         a = a.split(" ");
+    //         var longword = 0;
+    //         for (i = 0; i < a.length; i++) {
+    //             if (longword < a[i].length) {
+    //                 longword = a[i].length;
+    //                 var word = a[i];
+    //             }
+
+
+    //         }
+    //         alert("Longest  word =" + word);
+    //         alert("Length of word " + word + "is = " + longword);
+    //     }
+    //     longestChar(strr);
+
+    //Question 13;
+    var w = prompt("Enter a Word =");
+    var l = prompt("Enter a letter =");
+
+    function check(word, letter) {
+        var counter = 0;
+        for (i = 0; i < word.length; i++) {
+            if (word.charAt(i) === letter) {
+                counter += 1;
+            }
+
+        }
+
+        alert("Number of occurence of same letter is = " + counter);
+    }
+    check(w, l);
+
+    //Question 14;
+    var radius = Number(prompt("Enter Radius ="));
+
+    function calCircum(r) {
+
+        var circum = 2 * Math.PI * r;
+        circum.toFixed(2);
+        alert("Circumference of Circle = " + circum);
+
+    }
+
+    function calArea(r) {
+        var area = Math.PI * r * r;
+        area.toFixed(2);
+        alert("Area of Circle = " + area);
+
+    }
+    calCircum(radius);
+    calArea(radius);
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        //here we declare array using literal notation
+        // var li_array = ["ALi", "Ahmed"];
+
+        // //here we declare array using objetc notation
+        // var obj_array = {
+        //     Name: "Usman",
+        //     Age: 45
+        // };
+        // alert(obj_array.Age);
+
+        // //here we declare and intialize a string array
+        // var str_Array = ["Yasir", "Furqan"];
+
+        // //here we declare and intialize a number array
+        // var num_Array = [12, 23, 34, 45];
+
+        // //here we declarea and intialize a boolean array
+        // var bol_Array = [true, false];
+
+        // //here we declare and intialize a mixed array
+
+        // var mix_Array = ["Raza", 34, true];
+
+        // //here we declare and intialize a education array
+
+        // var edu_Array = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M.Phil.", "PhD"];
+        // document.write("<h1>Qualifications:</h1>");
+        // document.write("<br>");
+        // for (var i = 0; i < edu_Array.length; i++) {
+        //     document.write(i + 1 + " ) " + edu_Array[i]);
+        //     document.write("<br>");
+        // }
+        // document.write("<br>");
+        // document.write("<br>");
+        // var std_Name = ["Raza", "Qadri", "Faisal"];
+        // var score = [230, 340, 450];
+        // var total_Marks = 500;
+        // for (var j = 0; j < std_Name.length; j++) {
+        //     document.write("Score of " + std_Name[j] + " is " + score[j] + " .Percentage:" + (score[j] / total_Marks) * 100 + " % ");
+        //     document.write("<br>");
+        // }
+        // //declare and intialize a colour array
+        // var colour = ["Red", "Blue", "Green"];
+        // alert(colour);
+        // //a)add colour  to the beginning.
+
+        // var add_b = prompt("What Colour you want to add to the beginning =");
+        // colour.unshift(add_b);
+        // alert(colour);
+
+        // //b) add colour to the end of array
+
+        // var end = prompt("What Colour you want to add in the end =");
+        // colour.push(end);
+        // alert(colour);
+
+        // //c) add two colour to the beginning
+
+        // var add_b1 = prompt("What Colour you want to add to beginnning = ");
+        // var add_b2 = prompt("What Colour you want to add to the beginning = ");
+
+        // colour.unshift(add_b1);
+        // colour.unshift(add_b2);
+        // alert(colour);
+
+        // //d)   Delete the first colour in the array
+
+        // colour.shift();
+        // alert("Deleted first array!");
+        // alert(colour);
+
+        // //e) Delete the last element 
+        // colour.pop();
+        // alert("Deleted last array Element");
+        // alert(colour);
+
+        // // f) add colour to desire index
+        // var index_Array = prompt("At Which Index to add the colour = ");
+        // var index_Val = prompt("What Colour You want to add = ");
+        // Number(index_Array);
+        // //splice(kahn se add krna hai , kitnay delete krna ha , kiya add krna hai);
+        // colour.splice(index_Array, 0, index_Val);
+        // alert(colour);
+        // var index_Array2 = prompt("At Which Index to delete element  =");
+        // var index_Val2 = prompt("How many colours want to delete = ");
+        // colour.splice(index_Array2, index_Val2);
+        // alert(colour);
+
+
+        //store student scores 
+
+        // var score = [];
+        // for (var k = 0; k < 5; k++) {
+        //     score[k] = prompt("Enter Student " + k + " Score = ");
+        // }
+        // document.write("<br>");
+        // document.write("<br>");
+        // document.write("<br>");
+        // document.write("Scores of Students:");
+        // for (var l = 0; l < score.length; l++) {
+        //     document.write(score[l]);
+        //     document.write(" , ");
+        //     // document.write("<br>");
+
+        // }
+        // document.write("<br>");
+        // document.write("Ordered Scores of Students:");
+        // document.write(score.sort());
+
+        // //intialize an array with cities name and copy it;
+        // var cities = ["Karachi", "Islamabad", "Peshawar", "Quetta"];
+        // //slice(jahn se shuru krna ha , jahn tk chalana ha usney ik kam);
+        // var slected_Array = cities.slice(1, 3);
+        // document.write("<br>");
+        // document.write("<br>");
+        // document.write("<br>");
+        // document.write("Cities List:" + cities);
+        // document.write("<br>");
+        // document.write("Selected List:" + slected_Array);
+        // document.write("<br>");
+        // //add array elements in a single line
+        // //a.join();      // 'Wind,Rain,Fire'
+        // //    a.join(', ');  // 'Wind, Rain, Fire'
+        // //     a.join(' + '); // 'Wind + Rain + Fire'
+        // //      a.join('');    // 'WindRainFire'
+
+        // var arr = ["This", "is", "my", "new", "Cat"];
+        // document.write("<br>");
+        // document.write("Array :" + arr);
+        // document.write("<br>");
+        // document.write("String :" + arr.join(' '));
+
+        // //create a array in FIFO Order
+        // //stores values in na way that you can access it in the same order
+        // var FIFO = [];
+        // for (var p = 0; p < 5; p++) {
+        //     FIFO[p] = prompt("Enter Element " + p);
+        // }
+        // document.write("<br>");
+        // document.write("Stored Ways =");
+        // document.write("<br>");
+        // for (p = 0; p < FIFO.length; p++) {
+        //     document.write(FIFO[p]);
+        //     document.write("<br>");
+        // }
+        // document.write("<br>");
+        // document.write("OUT");
+        // document.write(FIFO.shift());
+        // document.write("<br>");
+        // document.write("OUT");
+        // document.write(FIFO.shift());
+        // document.write("<br>");
+        // document.write("OUT");
+        // document.write(FIFO.shift());
+        // document.write("<br>");
+        // document.write("OUT");
+        // document.write(FIFO.shift());
+        // document.write("<br>");
+        // document.write("OUT");
+        // document.write(FIFO.shift());
+        // document.write("<br>"); 
+
+        //create an array in LIFO order 
+        var LIFO = [];
+        for (i = 0; i < 5; i++) {
+            LIFO[i] = prompt("Enter Elements " + i + " = ");
+        }
+        for (i = 0; i < LIFO.length; i++) {
+            document.write(LIFO[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("<h1>Accessing Values------------------");
+        // document.write(LIFO.pop());
+        document.write("<br>");
+        document.write(LIFO.pop());
+        document.write("<br>");
+        document.write(LIFO.pop());
+        document.write("<br>");
+        document.write(LIFO.pop());
+        document.write("<br>");
+        document.write(LIFO.pop());
+        document.write("<br>");
+        document.write(LIFO.pop());
+        document.write("<br>");
+
+        //dropdown box using JavaScript
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        var phone = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+        document.write("<select>" +
+            "<option value=>" + phone[0] + "</option>" +
+            "<option value=>" + phone[1] + "</option>" +
+            "<option value=>" + phone[2] + "</option>" +
+            "<option value=>" + phone[3] + "</option>" +
+            "<option value=>" + phone[4] + "</option>" +
+            "<option value=>" + phone[5] + "</option>" +
+            "</select>"
+        );
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

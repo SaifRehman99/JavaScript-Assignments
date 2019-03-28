@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    //Q1
+
+    var number = 3.142;
+    alert(number);
+    alert("Round off Values = " + Math.round(number));
+    alert("Floor Value =" + Math.floor(number));
+    alert("Ceil Value = " + Math.ceil(number));
+
+    //Q2
+
+    var num2 = -2.673;
+    alert("Round Value =" + Math.round(num2));
+    alert("Floor Value = " + Math.floor(num2));
+    alert("Ceil Value = " + Math.ceil(num2));
+
+    //Q3
+
+    var abs = -56;
+    alert("The Absolute Value of " + abs + " is " + Math.abs(abs));
+
+    //Q4
+
+    var random = Math.random();
+    var a = random * 6;
+    var inc = a + 1;
+    var set = Math.floor(inc);
+    alert("Random Value is " + set);
+
+
+    //Q5
+
+    var ran = Math.random();
+    var head = ran * 2;
+    var tial = head + 1;
+    var bal = Math.floor(tial);
+    if (bal == 1) {
+        alert("Head = " + bal);
+    } else {
+        alert("Okay = " + bal);
+    }
+
+    //Q6
+
+    var randnum = Math.random();
+    var mult = randnum * 100;
+    var plus = mult + 1;
+    var same = Math.floor(plus);
+    alert("Randowm Number Between 1 and 100 =" + same);
+
+    //Q7
+
+    var num = Math.random();
+    var numMul = num * 10;
+    var addnum = numMul + 1;
+    var secret = Math.floor(addnum);
+    alert("Secret Number = " + secret);
+    var user = prompt("Guess Secret Number =");
+    var change = parseInt(user);
+
+    if (change === secret) {
+        alert("Right!");
+    } else {
+        alert("Try Again!");
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

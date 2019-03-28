@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chapter 31-34</title>
+</head>
+<script>
+    // var m_Func = new Date();
+    // document.write("Current Date = " + m_Func);
+    // document.write("<br>");
+
+    // var months = ["January", "Feb", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    // var f_Month = m_Func.getMonth();
+    // document.write("Current Month = " + months[f_Month]);
+    // var cMonth = months[f_Month];
+    // alert(cMonth.slice(0, 3));
+    // var cDay = m_Func.getDay();
+    // var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // if (day[cDay] === "Saturday" || day[cDay] === "Sunday") {
+    //     alert("Its Funday");
+    // } else {
+    //     alert("Its Not Funday");
+    // }
+    // var cDate = m_Func.getDate();
+    // if (cDate < 16) {
+    //     alert("First Fifteen Day");
+    // } else {
+    //     alert("Last Days of Month");
+    // }
+    // var time = m_Func.getTime();
+    // alert(time);
+    // var min = time / (1000 * 60 * 60);
+    // alert(min);
+    // var hRs = m_Func.getHours();
+    // if (hRs < 12) {
+    //     alert("Its AM")
+    // } else {
+    //     alert("Its PM");
+    // }
+
+    // var lSet = new Date();
+    // lSet.setFullYear(2025);
+    // alert(lSet);
+    // lSet.setMonth(11);
+    // alert(lSet);
+
+    // var calData = new Date("June 18, 2015");
+    // var cal = m_Func.getTime() - calData.getTime();
+    // var convert = cal / (1000 * 60 * 60 * 24);
+    // alert(convert + " days Have been Passed");
+    // var neww = new Date("Jan 1, 2018");
+    // var okay = m_Func.getTime() - neww.getTime();
+    // var secs = okay / (1000 * 60);
+    // alert(secs + " Seconds have been passed Since 2018");
+    // alert(okay / (100 * 60 * 60 * 24)) / 12;
+    // var change = m_Func.setHours(1);
+    // alert(change);
+    // var dob = m_Func.getFullYear();
+    // var a = 1994;
+    // alert(dob - a);
+    var dateee = new Date("Aug 23, 2018");
+    var setdate = new Date("Aug 25, 2018");
+    var name = prompt("Enter Your Name =");
+    var Month = prompt("Enter Month =");
+    var units = prompt("Enter Number of Units =");
+    var charges = 16;
+    var n = Number(units);
+    var bill = n * charges;
+
+    document.write("Name =" + name);
+    document.write("<br>");
+    document.write("Month =" + Month);
+    document.write("<br>");
+    document.write("Number of Units =" + units);
+    document.write("<br>");
+    document.write("Charges per Unit = " + charges);
+    document.write("<br>");
+    // document.write("Name ="+ name);
+    document.write("<br>");
+    document.write("Net Amount Payable within Due date" + dateee + "=" + bill);
+    document.write("<br>");
+    document.write("Late payment charges = 350");
+    document.write("<br>");
+    document.write("Gross Amount Paybale After Due Date" + setdate + "=" + (bill + 350));
+    document.write("<br>");
+</script>
+
+<body>
+
+</body>
+
+</html>
